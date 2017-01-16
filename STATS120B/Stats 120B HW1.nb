@@ -1,0 +1,342 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11047,        334]
+NotebookOptionsPosition[     10109,        296]
+NotebookOutlinePosition[     10492,        313]
+CellTagsIndexPosition[     10449,        310]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Stats 120B Homework 1: Due Wed, Jan. 18",
+ FontSize->24]], "Title",
+ CellChangeTimes->{3.6930826575694733`*^9}],
+
+Cell[TextData[StyleBox["1. Let X and Y be two independent random variables \
+following beta distributions Beta(120, 2017).\n(a) [5 pts] What\
+\[CloseCurlyQuote]s P(X = 0.5)?\n(b) [5pts]What\[CloseCurlyQuote]sP(X+3<2Y)?\n\
+(c) [5 pts] What\[CloseCurlyQuote]s P(X > Y )?",
+ FontSize->12]], "Text",
+ CellChangeTimes->{{3.6930826335375767`*^9, 3.6930826405230093`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{
+   RowBox[{"BetaDistribution", "[", 
+    RowBox[{"120", ",", "2017"}], "]"}], ",", "0.5"}], "]"}]], "Code",
+ CellChangeTimes->{{3.6930822982096024`*^9, 3.693082316518894*^9}, {
+  3.693082489731473*^9, 3.693082608964384*^9}}],
+
+Cell[BoxData["4.239607753812566637892866610879062117141`15.954589770191005*^-\
+442"], "Output",
+ CellChangeTimes->{{3.693082493963875*^9, 3.693082558051147*^9}, {
+  3.693082594114626*^9, 3.69308260993132*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{
+   RowBox[{"BetaDistribution", "[", 
+    RowBox[{"120", ",", "2017"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"X", "+", "3"}], "<", 
+     RowBox[{"2", "Y"}]}], "}"}]}], "]"}]], "Code",
+ CellChangeTimes->{{3.693082693827252*^9, 3.693082710138624*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[GridBox[{
+     {"\[Piecewise]", GridBox[{
+        {
+         RowBox[{
+         "21201491805307260269604825619301549288895737328867964501555514452395\
+544020281503792993386512905473458088163862594382804648568879661530793351202363\
+00806694101395086015730562542684562473579593374970432000", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"1", "-", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"3", "+", "X"}], "<", 
+               RowBox[{"2", " ", "Y"}]}], ")"}]}], ")"}], "2016"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"3", "+", "X"}], "<", 
+             RowBox[{"2", " ", "Y"}]}], ")"}], "119"]}], 
+         RowBox[{"0", "<", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"3", "+", "X"}], "<", 
+            RowBox[{"2", " ", "Y"}]}], ")"}], "<", "1"}]},
+        {"0", 
+         TagBox["True",
+          "PiecewiseDefault",
+          AutoDelete->True]}
+       },
+       AllowedDimensions->{2, Automatic},
+       Editable->True,
+       GridBoxAlignment->{
+        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+          "RowsIndexed" -> {}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.84]}, 
+           Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}, "RowsIndexed" -> {}},
+       Selectable->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.35]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}],
+   "Piecewise",
+   DeleteWithContents->True,
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "}"}]], "Output",
+ CellChangeTimes->{3.6930827106628428`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{
+   RowBox[{"BetaDistribution", "[", 
+    RowBox[{"120", ",", "2017"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"X", ">", "Y"}], "}"}]}], "]"}]], "Code",
+ CellChangeTimes->{{3.693082725930709*^9, 3.693082730170644*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[GridBox[{
+     {"\[Piecewise]", GridBox[{
+        {
+         RowBox[{
+         "21201491805307260269604825619301549288895737328867964501555514452395\
+544020281503792993386512905473458088163862594382804648568879661530793351202363\
+00806694101395086015730562542684562473579593374970432000", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"1", "-", 
+             RowBox[{"(", 
+              RowBox[{"X", ">", "Y"}], ")"}]}], ")"}], "2016"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"X", ">", "Y"}], ")"}], "119"]}], 
+         RowBox[{"0", "<", 
+          RowBox[{"(", 
+           RowBox[{"X", ">", "Y"}], ")"}], "<", "1"}]},
+        {"0", 
+         TagBox["True",
+          "PiecewiseDefault",
+          AutoDelete->True]}
+       },
+       AllowedDimensions->{2, Automatic},
+       Editable->True,
+       GridBoxAlignment->{
+        "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+          "RowsIndexed" -> {}},
+       GridBoxItemSize->{
+        "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+         "RowsIndexed" -> {}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.84]}, 
+           Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}, "RowsIndexed" -> {}},
+       Selectable->True]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.35]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}],
+   "Piecewise",
+   DeleteWithContents->True,
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "}"}]], "Output",
+ CellChangeTimes->{3.693082731164261*^9}]
+}, Open  ]],
+
+Cell[TextData[StyleBox["2. Suppose that X has the gamma distribution with \
+parameters \[Alpha] and \[Beta].\n(a) [10 pts] Determine the mode of X. (Be \
+careful about the range of \[Alpha])\n(b) [5 pts] Let c be a positive \
+constant. Show that cX has the gamma distribution\nwith parameters \[Alpha] \
+and \[Beta]/c.",
+ FontSize->12]], "Text",
+ CellChangeTimes->{3.6930828021709757`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{"GammaDistribution", "[", 
+   RowBox[{"\[Alpha]", ",", "\[Beta]"}], "]"}], "]"}]], "Code",
+ CellChangeTimes->{{3.693082818591264*^9, 3.693082856382368*^9}, {
+  3.693082902317524*^9, 3.6930829254901447`*^9}, {3.693082977346463*^9, 
+  3.6930829923589897`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{"\[FormalX]", ",", 
+   TagBox[GridBox[{
+      {"\[Piecewise]", GridBox[{
+         {
+          FractionBox[
+           RowBox[{
+            SuperscriptBox["\[FormalX]", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "\[Alpha]"}]], " ", 
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{"-", 
+              FractionBox["\[FormalX]", "\[Beta]"]}]], " ", 
+            SuperscriptBox["\[Beta]", 
+             RowBox[{"-", "\[Alpha]"}]]}], 
+           RowBox[{"Gamma", "[", "\[Alpha]", "]"}]], 
+          RowBox[{"\[FormalX]", ">", "0"}]},
+         {"0", 
+          TagBox["True",
+           "PiecewiseDefault",
+           AutoDelete->True]}
+        },
+        AllowedDimensions->{2, Automatic},
+        Editable->True,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}},
+           "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.84]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}},
+        Selectable->True]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.35]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    "Piecewise",
+    DeleteWithContents->True,
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], ",", "Listable"}], "]"}]], "Output",
+ CellChangeTimes->{{3.69308297886206*^9, 3.6930829928144493`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Code",
+ CellChangeTimes->{{3.693500622377276*^9, 3.69350063538627*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.693095269328596*^9, 3.693095269339744*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.693082485537921*^9, 3.693082487309617*^9}, 
+   3.693082689092421*^9}]
+}, Open  ]]
+},
+WindowSize->{838, 1005},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 135, 2, 103, "Title"],
+Cell[718, 26, 365, 5, 144, "Text"],
+Cell[CellGroupData[{
+Cell[1108, 35, 271, 6, 78, "Code"],
+Cell[1382, 43, 209, 3, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1628, 51, 314, 9, 78, "Code"],
+Cell[1945, 62, 2404, 66, 263, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4386, 133, 267, 7, 78, "Code"],
+Cell[4656, 142, 2196, 60, 263, "Output"]
+}, Open  ]],
+Cell[6867, 205, 389, 6, 119, "Text"],
+Cell[CellGroupData[{
+Cell[7281, 215, 304, 6, 78, "Code"],
+Cell[7588, 223, 2184, 59, 107, "Output"]
+}, Open  ]],
+Cell[9787, 285, 90, 1, 78, "Code"],
+Cell[9880, 288, 92, 1, 48, "Input"],
+Cell[9975, 291, 118, 2, 48, "Input"]
+}, Open  ]]
+}
+]
+*)
+
